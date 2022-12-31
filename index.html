@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header id="header">
+        <h1> calculator </h1>
+        <div class="anitakath">
+            <h2> made by anitakath 🐣</h2>
+        </div>
+      
+    </header>
+
+    <main>
+        <div class="calculatorContainer">
+
+            <div class="wrapper">
+                <div class="output"> 
+                    <p id="output">  </p>
+                </div>
+    
+                <div class="table">
+                    <table>
+                        <tr class="tableRow">
+                            <td class="tdHover" onclick="clearLastElement()"> DEL</td>
+                            <td class="tdHover" onclick="clearAll()"> AC </td>
+                            <td class="tdHover" id="modulo" onclick="Operation(' % ')"> modulo </td>
+                            <td class="tdHover" id="divided" onclick="Operation(' / ')"> / </td>
+                            
+                        </tr>
+        
+                        <tr class="tableRow">
+                            <td class="tdHover" id="seven" value="7" onclick="Operation(7)"> 7 </td>
+                            <td class="tdHover" id="eight" onclick="Operation(8)"> 8 </td>
+                            <td class="tdHover" id="nine" onclick="Operation(9)"> 9 </td>
+                            <td class="tdHover" id="x" onclick="Operation(' * ')"> * </td>
+                            
+                        </tr>
+        
+                        <tr class="tableRow">
+                            <td class="tdHover" id="four" onclick="Operation(4)"> 4 </td>
+                            <td class="tdHover" id="five" onclick="Operation(5)"> 5 </td>
+                            <td class="tdHover" id="six" onclick="Operation(6)"> 6 </td>
+                            <td class="tdHover" id="minus" onclick="Operation(' - ')"> - </td>
+                            
+                        </tr>
+        
+                        <tr class="tableRow">
+                            <td class="tdHover" id="one" onclick="Operation(1)"> 1 </td>
+                            <td class="tdHover" id="two" onclick="Operation(2)"> 2 </td>
+                            <td class="tdHover" id="three" onclick="Operation(3)"> 3 </td>
+                            <td class="tdHover" id="plus" onclick="Operation(' + ')"> + </td>
+                            
+                        </tr>
+        
+                        <tr class="tableRow">
+                            <td class="tdHover" id="zero" onclick="Operation(0)"> 0 </td>
+                            <td class="tdHover" onclick="showMeLove()"> 🐶 </td>
+                            <td class="tdHover" id="comma" onclick="Operation('.')"> , </td>
+                            <td class="tdHover" id="equalTo" onclick="calculate()"> = </td>
+                           
+                        </tr>
+        
+        
+        
+                    </table>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+       
+    </main>
+    <div class="theDiv">
+        <div class="goBack">
+            <i class="fa-solid fa-chevron-up"></i>
+
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CiZND1ZMQNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+
+    <script src="main.js"> </script>
+    
+</body>
+</html>
