@@ -41,9 +41,7 @@ function showMeLove(){
    const goBack = document.querySelector('.goBack')
 
    theDiv.style.display = 'block'
-   theDiv.style.position = 'relative'
-   goBack.style.position = 'absolute'
-   goBack.style.left = '670px'
+   
 
    theDiv.scrollIntoView({
        behavior: 'smooth'
